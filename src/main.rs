@@ -4,13 +4,12 @@ mod utils;
 mod taylor;
 mod rects;
 
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 
-use crate::first_prog::first_prog;
-use crate::fib::fib;
-use crate::taylor::taylor;
-use crate::rects::rects;
+use first_prog::first_prog;
+use fib::fib;
+use taylor::taylor;
+use rects::rects;
 
 fn main() {
     println!("Test rust stuff\n");

@@ -1,5 +1,4 @@
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 
 pub fn get_input(input_txt: &str) -> (String, bool) {
     let mut input = String::new();
