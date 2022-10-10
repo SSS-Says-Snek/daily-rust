@@ -36,7 +36,7 @@ fn first_prog() {
         let (input, break_out) = get_input("Enter age");
         if break_out {break};
 
-        let age: i32 = input.trim().parse().expect("ENTER. A. NUMBER");
+        let age: i32 = input.trim().parse().expect("That's not a number! >:(");
         println!("You're {age} years old!");
 
         match age.cmp(&MY_AGE) {
@@ -81,15 +81,15 @@ fn taylor() {
     loop {
         let (input, break_out) = get_input("Enter nth iteration for sin(x)");
         if break_out {break};
-        let num_iter: u32 = input.trim().parse().expect("That's not a number! >:(");
+        let num_iter: i32 = input.trim().parse().expect("That's not a number! >:(");
 
         let (input, break_out) = get_input("Enter radians");
         if break_out {break};
-        let angle: f64 = input.trim().parse().expect("That's not a number!");
+        let angle: f64 = input.trim().parse().expect("That's not a number! >:(");
 
         let mut result = 0.0;
 
-        for i in 0..num_iter as u32 {
+        for i in 0..num_iter {
             let sign = (2 * ((i + 1) % 2) - 1) as f64;
             let exp = (2 * i + 1) as i32;
 
