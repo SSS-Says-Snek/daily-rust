@@ -3,17 +3,13 @@ mod fib;
 mod utils;
 mod taylor;
 mod rects;
+mod bsort;
 
 use std::io::{self, Write};
 
-use first_prog::first_prog;
-use fib::fib;
-use taylor::taylor;
-use rects::rects;
-
 fn main() {
     println!("Test rust stuff\n");
-    println!("Progs to run: firstprog, fib, taylor, rects");
+    println!("Progs to run: firstprog, fib, taylor, rects, bsort");
 
     loop {
         // Am lazy to see if it's possible without, so I'll just match everything
@@ -27,10 +23,11 @@ fn main() {
             .expect("Input Error");
         
         match progname.trim() {
-            "firstprog" => first_prog(),
-            "fib" => fib(),
-            "taylor" => taylor(),
-            "rects" => rects(),
+            "firstprog" => first_prog::first_prog(),
+            "fib" => fib::fib(),
+            "taylor" => taylor::taylor(),
+            "rects" => rects::rects(),
+            "bsort" => bsort::bsort(),
             _ => println!("Does not exist!")
         }
     }
