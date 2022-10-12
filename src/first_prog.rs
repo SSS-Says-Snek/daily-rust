@@ -2,7 +2,7 @@ use std::cmp::Ordering;
 
 use crate::utils::get_input;
 
-pub fn first_prog() {
+pub fn main() {
     const MY_AGE: i32 = 15;
 
     println!();

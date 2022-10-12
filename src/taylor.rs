@@ -7,7 +7,7 @@ fn factorial(num: u128) -> u128 {
     }
 }
 
-pub fn taylor() {
+pub fn main() {
     println!();
 
     loop {

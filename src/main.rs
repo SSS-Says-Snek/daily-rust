@@ -4,12 +4,13 @@ mod utils;
 mod taylor;
 mod rects;
 mod bsort;
+mod secret_message;
 
 use std::io::{self, Write};
 
 fn main() {
     println!("Test rust stuff\n");
-    println!("Progs to run: firstprog, fib, taylor, rects, bsort");
+    println!("Progs to run: firstprog, fib, taylor, rects, bsort, secretmessage");
 
     loop {
         // Am lazy to see if it's possible without, so I'll just match everything
@@ -23,11 +24,12 @@ fn main() {
             .expect("Input Error");
         
         match progname.trim() {
-            "firstprog" => first_prog::first_prog(),
-            "fib" => fib::fib(),
-            "taylor" => taylor::taylor(),
-            "rects" => rects::rects(),
-            "bsort" => bsort::bsort(),
+            "firstprog" => first_prog::main(),
+            "fib" => fib::main(),
+            "taylor" => taylor::main(),
+            "rects" => rects::main(),
+            "bsort" => bsort::main(),
+            "secretmessage" => secret_message::main(),
             _ => println!("Does not exist!")
         }
     }

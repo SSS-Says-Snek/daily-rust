@@ -27,7 +27,7 @@ impl Rect {
     }
 }
 
-pub fn rects() {
+pub fn main() {
     println!();
 
     let mut example1 = Rect {

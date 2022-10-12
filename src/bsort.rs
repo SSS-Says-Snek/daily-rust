@@ -10,20 +10,21 @@ fn bubble_sort<T: PartialOrd + Copy> (vecs: &mut [T]) {
     }
 }
 
-pub fn bsort() {
+pub fn main() {
     println!();
 
+    // See, it's generic!
     let mut e: [i128; 5] = [3, 5376, 136, 34, -15];
     bubble_sort(&mut e);
-    println!("{e:?}");
+    println!("Unsorted: [3, 5376, 136, 34, -15]\nSorted: {e:?}\n");
 
     loop {
         let (input, break_out) = get_input("Enter list separated by spaces");
         if break_out {break};
 
-        let mut nums: Vec<i32> = input.trim()
+        let mut nums: Vec<i128> = input.trim()
             .split_whitespace()
-            .map(|c| c.parse().expect("Not a number!"))
+            .map(|x| x.parse().expect("Not a number!"))
             .collect();
 
         bubble_sort(&mut nums);

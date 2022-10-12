@@ -1,6 +1,6 @@
 use crate::utils::get_input;
 
-pub fn fib() {
+pub fn main() {
     println!();
 
     loop {
