@@ -8,7 +8,9 @@ fn get_half_letters(msg: &str, mode: u8) -> Vec<char> {
 
     // Goofy ahh graphemes
     for (i, c) in msg.chars().enumerate() {
-        if (i % 2) as u8 == mode {result.push(c)}
+        if (i % 2) as u8 == mode {
+            result.push(c)
+        }
     }
 
     result
@@ -20,7 +22,9 @@ fn swap_letters(msg: &str) -> String {
     let mut odds = get_half_letters(msg, 1);
 
     // If the msg len is odd, assert_eq!(odds.len(), evens.len() - 1). So, we add an x to odds
-    if msg.len() % 2 == 1 {odds.push('x')}
+    if msg.len() % 2 == 1 {
+        odds.push('x')
+    }
 
     // Effectively swaps the places of odd and even letter
     for i in 0..odds.len() {
@@ -34,19 +38,24 @@ fn swap_letters(msg: &str) -> String {
 fn encdec(mode: &str) {
     // Deref coerces into a &str
     let (input, break_out) = get_input(&format!("Enter message to {mode}"));
-    if break_out {return};
+    if break_out {
+        return;
+    };
 
     let input = input.trim();
 
-    swap_letters(&input);
+    let result = swap_letters(&input);
+    println!("The result is: {result}");
 }
 
 pub fn main() {
     println!("\nWelcome to \"The Encryptor Decryptor\"!");
 
     loop {
-        let (input, break_out) = get_input("What do you want to do? (enter encrypt/decrypt)"); 
-        if break_out {break};
+        let (input, break_out) = get_input("What do you want to do? (enter encrypt/decrypt)");
+        if break_out {
+            break;
+        };
 
         let input = input.trim();
         if !["encrypt", "decrypt"].contains(&input) {
@@ -55,6 +64,6 @@ pub fn main() {
         }
 
         encdec(&input);
+        println!();
     }
 }
-

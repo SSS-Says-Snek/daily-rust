@@ -2,8 +2,8 @@ use crate::utils::get_input;
 
 fn factorial(num: u128) -> u128 {
     match num {
-        0  => 1,
-        1.. => (1..num+1).product(),
+        0 => 1,
+        1.. => (1..num + 1).product(),
     }
 }
 
@@ -12,11 +12,15 @@ pub fn main() {
 
     loop {
         let (input, break_out) = get_input("Enter nth iteration for sin(x)");
-        if break_out {break};
+        if break_out {
+            break;
+        };
         let num_iter: i32 = input.trim().parse().expect("That's not a number! >:(");
 
         let (input, break_out) = get_input("Enter radians");
-        if break_out {break};
+        if break_out {
+            break;
+        };
         let angle: f64 = input.trim().parse().expect("That's not a number! >:(");
 
         let mut result = 0.0;

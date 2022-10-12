@@ -1,10 +1,10 @@
-mod first_prog;
-mod fib;
-mod utils;
-mod taylor;
-mod rects;
 mod bsort;
+mod fib;
+mod first_prog;
+mod rects;
 mod secret_message;
+mod taylor;
+mod utils;
 
 use std::io::{self, Write};
 
@@ -19,10 +19,8 @@ fn main() {
         print!("Enter prog to run: ");
         io::stdout().flush().unwrap();
 
-        io::stdin()
-            .read_line(&mut progname)
-            .expect("Input Error");
-        
+        io::stdin().read_line(&mut progname).expect("Input Error");
+
         match progname.trim() {
             "firstprog" => first_prog::main(),
             "fib" => fib::main(),
@@ -30,7 +28,7 @@ fn main() {
             "rects" => rects::main(),
             "bsort" => bsort::main(),
             "secretmessage" => secret_message::main(),
-            _ => println!("Does not exist!")
+            _ => println!("Does not exist!"),
         }
     }
 }

@@ -5,7 +5,9 @@ pub fn main() {
 
     loop {
         let (input, break_out) = get_input("Enter nth term");
-        if break_out {break};
+        if break_out {
+            break;
+        };
 
         let term: u32 = input.trim().parse().expect("That's not a number! >:(");
 

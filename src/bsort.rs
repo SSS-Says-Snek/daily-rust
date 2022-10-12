@@ -1,6 +1,6 @@
 use crate::utils::get_input;
 
-fn bubble_sort<T: PartialOrd + Copy> (vecs: &mut [T]) {
+fn bubble_sort<T: PartialOrd + Copy>(vecs: &mut [T]) {
     for i in (0..vecs.len()).rev() {
         for j in 0..i {
             if vecs[j] > vecs[j + 1] {
@@ -20,9 +20,12 @@ pub fn main() {
 
     loop {
         let (input, break_out) = get_input("Enter list separated by spaces");
-        if break_out {break};
+        if break_out {
+            break;
+        };
 
-        let mut nums: Vec<i128> = input.trim()
+        let mut nums: Vec<i128> = input
+            .trim()
             .split_whitespace()
             .map(|x| x.parse().expect("Not a number!"))
             .collect();

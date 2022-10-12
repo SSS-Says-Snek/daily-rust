@@ -9,7 +9,9 @@ pub fn main() {
 
     loop {
         let (input, break_out) = get_input("Enter age");
-        if break_out {break};
+        if break_out {
+            break;
+        };
 
         let age: i32 = input.trim().parse().expect("That's not a number! >:(");
         println!("You're {age} years old!");
@@ -20,7 +22,7 @@ pub fn main() {
             Ordering::Equal => {
                 println!("Hi");
                 break;
-            },
+            }
         }
     }
 }
