@@ -5,12 +5,13 @@ mod rects;
 mod secret_message;
 mod taylor;
 mod utils;
+mod deriv;
 
 use std::io::{self, Write};
 
 fn main() {
     println!("Test rust stuff\n");
-    println!("Progs to run: firstprog, fib, taylor, rects, bsort, secretmessage");
+    println!("Progs to run: firstprog, fib, taylor, rects, bsort, secretmessage, deriv");
 
     loop {
         // Am lazy to see if it's possible without, so I'll just match everything
@@ -28,6 +29,7 @@ fn main() {
             "rects" => rects::main(),
             "bsort" => bsort::main(),
             "secretmessage" => secret_message::main(),
+            "deriv" => deriv::main(),
             _ => println!("Does not exist!"),
         }
     }
