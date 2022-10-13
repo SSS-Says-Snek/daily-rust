@@ -1,9 +1,9 @@
 <div align="center">
-  <h1>Random Rust Projects</h1>
+  <h1>Daily Rust</h1>
   
-  <p>Just a collection of tiny Rust projects I've did. None warrant a whole repo rn</p>
+  <p>I try to write some tiny programs daily to gradually improve my Rust skills!</p>
 
-  <img src="https://img.shields.io/github/license/SSS-Says-Snek/random-rust-projects?style=flat&label=License">
+  <img src="https://img.shields.io/github/license/SSS-Says-Snek/daily-rust?style=flat&label=License">
 </div>
 
 ## Current Program Descriptions
