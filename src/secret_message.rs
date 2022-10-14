@@ -44,7 +44,7 @@ fn encdec(mode: &str) {
 
     let input = input.trim();
 
-    let result = swap_letters(&input);
+    let result = swap_letters(input);
     println!("The result is: {result}");
 }
 
@@ -63,7 +63,7 @@ pub fn main() {
             continue;
         }
 
-        encdec(&input);
+        encdec(input);
         println!();
     }
 }

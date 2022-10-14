@@ -25,7 +25,6 @@ pub fn main() {
         };
 
         let mut nums: Vec<i128> = input
-            .trim()
             .split_whitespace()
             .map(|x| x.parse().expect("Not a number!"))
             .collect();

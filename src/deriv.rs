@@ -13,6 +13,8 @@ fn derive<F: Fn(f64) -> f64>(f: F, x: f64) -> f64 {
 }
 
 pub fn main() {
+    println!();
+
     loop {
         let (input, break_out) = get_input("Enter func (sin, cos, sqr)");
         if break_out {
