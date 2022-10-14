@@ -1,19 +1,21 @@
 mod bsort;
+mod deriv;
 mod fib;
 mod first_prog;
+mod product;
 mod rects;
+mod rps;
 mod secret_message;
 mod taylor;
 mod utils;
-mod deriv;
-mod product;
-mod rps;
 
 use std::io::{self, Write};
 
 fn main() {
     println!("Test rust stuff\n");
-    println!("Progs to run: firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps");
+    println!(
+        "Progs to run: firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps"
+    );
 
     loop {
         // Am lazy to see if it's possible without, so I'll just match everything

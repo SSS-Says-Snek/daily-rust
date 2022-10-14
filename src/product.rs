@@ -4,7 +4,7 @@
     for &subarr in arr {
         for y in subarr {
             for x in &result {
-                result = 
+                result =
             }
         }
     }
@@ -12,6 +12,4 @@
     result
 }*/
 
-pub fn main() {
-
-}
+pub fn main() {}

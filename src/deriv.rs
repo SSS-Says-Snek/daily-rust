@@ -8,7 +8,7 @@ fn derive<F: Fn(f64) -> f64>(f: F, x: f64) -> f64 {
     let x2 = x + DELTA;
     let y1 = f(x1);
     let y2 = f(x2);
-    
+
     (y2 - y1) / (x2 - x1)
 }
 
@@ -26,7 +26,7 @@ pub fn main() {
             "sin" => f64::sin,
             "cos" => f64::cos,
             "sqr" => |x: f64| x.powf(2.0),
-            _ => continue
+            _ => continue,
         };
 
         let (input, break_out) = get_input("Enter func value");

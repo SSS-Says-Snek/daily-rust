@@ -23,18 +23,21 @@ pub fn main() {
         }
 
         let comp_move: &str = options.choose(&mut rand::thread_rng()).unwrap();
-        println!("The computer chose {}", match comp_move {
-            "r" => "rock",
-            "s" => "scissors",
-            "p" => "paper",
-            _ => "invalid"
-        });
+        println!(
+            "The computer chose {}",
+            match comp_move {
+                "r" => "rock",
+                "s" => "scissors",
+                "p" => "paper",
+                _ => "invalid",
+            }
+        );
 
         match format!("{}{}", input, comp_move).as_str() {
             "rs" | "pr" | "sp" => {
                 println!("You won!");
                 wins += 1;
-            },
+            }
             "rr" | "pp" | "ss" => {
                 println!("It's a draw!");
                 wins += 1;
