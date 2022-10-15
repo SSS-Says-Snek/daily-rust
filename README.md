@@ -4,7 +4,7 @@
   <p>I try to write some tiny programs daily to gradually improve my Rust skills!</p>
 
   <img src="https://img.shields.io/github/license/SSS-Says-Snek/daily-rust?style=flat&label=License">
-  <img src="https://img.shields.io/github/repo-size/SSS-Says-Snek/daily-rust?style=flat&label=Codebase%20size">
+  <img src="https://img.shields.io/github/repo-size/SSS-Says-Snek/daily-rust?style=flat&label=Codebase%20Size">
   <img src="https://img.shields.io/tokei/lines/github/SSS-Says-Snek/daily-rust?style=flat&label=Lines of Code">
 </div>
 
