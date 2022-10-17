@@ -18,6 +18,7 @@
 - rects.rs: A very simple example that helped me learn structures and implementations
 - deriv.rs: Derivatives of sample functions
 - rps.rs: Rock, Paper, Scissors
+- pi.rs: Approximate pi (via Nilakantha Series)
 
 ## Unfinished Programs
 - advanced.rs: A file showcasing my (nonexistant) knowledge of some more advanced Rust stuff

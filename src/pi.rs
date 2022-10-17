@@ -12,8 +12,8 @@ fn sign(n: u128) -> i128 {
 
 fn approx_pi(num_iter: u128) -> f64 {
     3.0 + (0..num_iter)
-    .map(|n| sign(n) as f64 * 4.0 / np3(2 * n + 4) as f64)
-    .sum::<f64>()
+        .map(|n| sign(n) as f64 * 4.0 / np3(2 * n + 4) as f64)
+        .sum::<f64>()
 }
 
 pub fn main() {

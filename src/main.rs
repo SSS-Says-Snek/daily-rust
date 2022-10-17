@@ -1,24 +1,26 @@
 mod bsort;
 mod deriv;
+mod ecrates;
 mod fib;
 mod first_prog;
+mod pi;
 mod product;
 mod rects;
 mod rps;
 mod secret_message;
 mod taylor;
 mod utils;
-mod ecrates;
-mod pi;
 
-use std::io::{self, Write};
 use colored::Colorize;
+use std::io::{self, Write};
 
 fn main() {
     println!("\n{}", "Test rust stuff\n".bright_yellow());
     println!(
-        "{} {}", "Progs to run:".bright_green(),
-        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates, pi".bright_cyan()
+        "{} {}",
+        "Progs to run:".bright_green(),
+        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates, pi"
+            .bright_cyan()
     );
 
     loop {
