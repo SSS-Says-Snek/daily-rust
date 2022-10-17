@@ -9,6 +9,7 @@ mod secret_message;
 mod taylor;
 mod utils;
 mod ecrates;
+mod pi;
 
 use std::io::{self, Write};
 use colored::Colorize;
@@ -17,7 +18,7 @@ fn main() {
     println!("\n{}", "Test rust stuff\n".bright_yellow());
     println!(
         "{} {}", "Progs to run:".bright_green(),
-        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates".bright_cyan()
+        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates, pi".bright_cyan()
     );
 
     loop {
@@ -40,6 +41,7 @@ fn main() {
             "product" => product::main(),
             "rps" => rps::main(),
             "ecrates" => ecrates::main(),
+            "pi" => pi::main(),
             _ => println!("{}", "Does not exist!".bright_red()),
         }
     }
