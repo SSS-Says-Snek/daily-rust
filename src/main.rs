@@ -5,6 +5,7 @@ mod fib;
 mod first_prog;
 mod pi;
 mod product;
+mod quadvert;
 mod rects;
 mod rps;
 mod secret_message;
@@ -19,7 +20,7 @@ fn main() {
     println!(
         "{} {}",
         "Progs to run:".bright_green(),
-        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates, pi"
+        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates, pi, quadvert"
             .bright_cyan()
     );
 
@@ -44,6 +45,7 @@ fn main() {
             "rps" => rps::main(),
             "ecrates" => ecrates::main(),
             "pi" => pi::main(),
+            "quadvert" => quadvert::main(),
             _ => println!("{}", "Does not exist!".bright_red()),
         }
     }
