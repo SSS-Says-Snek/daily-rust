@@ -20,6 +20,7 @@
 - rps.rs: Rock, Paper, Scissors
 - pi.rs: Approximate pi (via Nilakantha Series)
 - quadvert.rs: Find the vertex of a given quadratic
+- synthdiv.rs: Synthetic polynomial division
 
 ## Unfinished Programs
 - advanced.rs: A file showcasing my (nonexistant) knowledge of some more advanced Rust stuff

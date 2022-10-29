@@ -9,6 +9,7 @@ mod quadvert;
 mod rects;
 mod rps;
 mod secret_message;
+mod synthdiv;
 mod taylor;
 mod utils;
 
@@ -20,7 +21,7 @@ fn main() {
     println!(
         "{} {}",
         "Progs to run:".bright_green(),
-        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates, pi, quadvert"
+        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates, pi, quadvert, synthdiv"
             .bright_cyan()
     );
 
@@ -46,6 +47,7 @@ fn main() {
             "ecrates" => ecrates::main(),
             "pi" => pi::main(),
             "quadvert" => quadvert::main(),
+            "synthdiv" => synthdiv::main(),
             _ => println!("{}", "Does not exist!".bright_red()),
         }
     }

@@ -8,7 +8,7 @@ pub fn main() {
     println!();
 
     loop {
-        let (input, break_out) = get_input(&format!("Enter a, b, c, separated by spaces"));
+        let (input, break_out) = get_input("Enter a, b, c, separated by spaces");
         if break_out {
             break;
         };
