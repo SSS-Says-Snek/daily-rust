@@ -35,7 +35,7 @@ fn main() {
 
         io::stdin().read_line(&mut progname).expect("Input Error");
 
-        match progname.trim() {
+        match progname.to_lowercase().trim() {
             "firstprog" => first_prog::main(),
             "fib" => fib::main(),
             "taylor" => taylor::main(),
@@ -50,6 +50,10 @@ fn main() {
             "quadvert" => quadvert::main(),
             "synthdiv" => synthdiv::main(),
             "syslin" => syslin::main(),
+            "q" | "quit" => {
+                println!("{}", "Bye!".bright_green());
+                break;
+            }
             _ => println!("{}", "Does not exist!".bright_red()),
         }
     }
