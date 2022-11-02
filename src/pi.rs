@@ -7,7 +7,7 @@ fn np3(n: u128) -> u128 {
 }
 
 fn sign(n: u128) -> i128 {
-    (-1 as i128).pow(n as u32)
+    (-1_i128).pow(n as u32)
 }
 
 fn approx_pi(num_iter: u128) -> f64 {
@@ -20,7 +20,7 @@ pub fn main() {
     println!();
 
     loop {
-        let (input, break_out) = get_input(&format!("Enter num iterations to approximate"));
+        let (input, break_out) = get_input("Enter num iterations to approximate");
         if break_out {
             break;
         };

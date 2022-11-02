@@ -21,6 +21,7 @@
 - pi.rs: Approximate pi (via Nilakantha Series)
 - quadvert.rs: Find the vertex of a given quadratic
 - synthdiv.rs: Synthetic polynomial division
+- syslin.rs: Solve 2-variable systems of equations (via Cramer's rule)
 
 ## Unfinished Programs
 - advanced.rs: A file showcasing my (nonexistant) knowledge of some more advanced Rust stuff
