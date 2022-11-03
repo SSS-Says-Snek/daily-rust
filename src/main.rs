@@ -22,7 +22,7 @@ fn main() {
     println!(
         "{} {}",
         "Progs to run:".bright_green(),
-        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates, pi, quadvert, synthdiv, syslin"
+        "firstprog, fib, taylor, rects, bsort, secretmessage, deriv, product, rps, ecrates, pi, quadvert, synthdiv, syslin, tui_test"
             .bright_cyan()
     );
 
