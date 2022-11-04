@@ -11,3 +11,6 @@ colored = "2.0.0"
 crossterm = "0.25.0"
 rand = "0.8.4"
 tui = "0.19.0"
+
+[workspace]
+members = ["tui_test"]
