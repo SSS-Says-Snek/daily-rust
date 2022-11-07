@@ -13,6 +13,7 @@ mod synthdiv;
 mod syslin;
 mod taylor;
 mod utils;
+mod vectors;
 
 use colored::Colorize;
 use std::io::{self, Write};
@@ -50,6 +51,7 @@ fn main() {
             "quadvert" => quadvert::main(),
             "synthdiv" => synthdiv::main(),
             "syslin" => syslin::main(),
+            "vectors" => vectors::main(),
             "q" | "quit" => {
                 println!("{}", "Bye!".bright_green());
                 break;
